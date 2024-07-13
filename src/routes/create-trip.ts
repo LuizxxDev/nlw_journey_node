@@ -36,6 +36,8 @@ export async function createTrip(app: FastifyInstance) {
             }
         })
 
+        
+
         const mail = await getMailClient();
 
         const message = await mail.sendMail({
